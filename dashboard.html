@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="Main">
+        <nav class="navbar bg-body-secondary navbar-expand-md shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img width="100px"
+                        src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <img width="100px"
+                                src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt=""> </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">My Profile</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Notifications</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Me
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Edit profile</a></li>
+                                    <li><a class="dropdown-item" href="#" id="logout">Log out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mainBox d-flex justify-content-center gap-2 mt-4">
+            <div class="left">
+                <div class="profilepic">
+                    <img class="profileimg" src=""
+                        alt="">
+                </div>
+                <div class="profiledetail mt-4">
+                    <h1 class="username">Muhammad hasnain</h1>
+                    <p id="email">Hasnain@gmail.com</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="inp">
+                    <p class="image">
+                        <img class="profileimg" src=""
+                            alt="">
+                            
+                    </p>
+                    <button class="createpost" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a post with
+                        image</button>
+                </div>
+
+
+                <div class="parent">
+                <!-- <div class="sec">
+                    <div class="inpt">
+                        <div class="post">
+                            <p class="image">
+                                <img src="./assets/126044187-isolated-object-of-avatar-and-dummy-symbol-collection-of-avatar-and-image-stock-symbol-for-web.jpg"
+                                    alt="">
+                            </p>
+                            <div class="detail">
+                                <h6 class="username">Muhammad hasnain</h6>
+                                <div class="detai">
+                                    <p>description</p>
+                                    <p>8min ago</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                    </div>
+                    <div class="posttext">
+                        <p> My first post</p>
+                    </div>
+                    <div class="postimg">
+                        <img src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9ufGVufDB8fDB8fHww&w=1000&q=80"
+                            alt="">
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title modalpic fs-5" id="exampleModalLabel"><img width="50px"
+                                src="./assets/126044187-isolated-object-of-avatar-and-dummy-symbol-collection-of-avatar-and-image-stock-symbol-for-web.jpg"
+                                alt=""><span class="username">Muhammad hasnain</span></h1>
+                        <button type="button" class="btn-close" id="close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body TextArea">
+                        <textarea name="" id="postText" cols="39" rows="5"></textarea>
+                        <div class="btnss">
+                            <button><label for="inp"><i class="fa-solid fa-image"></i> Photo </label> 
+                                <input type="file" class="file"  id="inp"> </button>
+                            <button><label for="inpu"><i class="fa-solid fa-video"></i> Video </label> 
+                                <input type="file" class="file"  id="inpu"> </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="postbtn">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+          
+        <!-- //////////////////////////////////////////////modal edit profile///////////////////////////////////////// -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Edit Profile</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="update your email" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="update your password" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="update your username" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02">
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                      </div>
+             
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button type="button" class="btn btn-primary w-50" id="update">Update</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+    </div>
+
+
+
+</body>
+<script src="./dashboard.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+
+</html>

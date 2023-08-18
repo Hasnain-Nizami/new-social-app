@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.box{
+    max-width: 500px;
+    width: 90%;
+}
+.left{
+    width: 25%;
+    height: 65vh;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    padding: 10px;
+}
+.right{
+    width: 70%;
+    height: 20vh;
+    border-radius: 5px;
+}
+.inp{
+    width: 100%;
+    border: 1px solid rgb(167, 167, 167);
+    height: 13vh;
+    border-radius: 5px;
+    display: flex;
+    padding: 15px;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.createpost{
+    width: 90%;
+    border-radius: 50px;
+    text-align: start;
+    padding: 10px;
+}
+.post{
+    width:35%;
+    display: flex;
+    gap: 10px;
+
+}
+.sec{
+    width: 100%;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.inpt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail h6{
+    margin: 0;
+}
+.detai p{
+    margin: 0;
+    font-size: 12px;
+}
+.posttext{
+    width: 100%;
+    font-family: sans-serif;
+}
+.postimg{
+    width: 100%;
+    height: 50vh;
+}
+.postimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.profilepic{
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+.profilepic img{
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 1px solid black;
+    
+}
+
+.profiledetail h1{
+    font-size: 22px;
+    text-align: center;
+}
+.profiledetail p{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.modalpic img{
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.postText{
+    width: 100%;
+    
+}
+.TextArea textarea{
+    padding: 5px 10px;
+    font-size: 25px;
+    margin-top: 5px;
+    border: none;
+    width: 100%;
+    resize: none;
+}
+.TextArea textarea:focus{
+    outline: none;
+}
+.btnss{
+    display: flex;
+    justify-content: space-around;
+}
+.btnss button{
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: none;
+    transition: 0.4s;
+}
+.btnss button:hover{
+    background-color: rgb(214, 214, 214);
+}
+#postbtn{
+    padding: 8px 50px;
+}
+.file{
+    display: none;
+}
+.Main{
+    display: none;
+}
+
